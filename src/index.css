@@ -1,4 +1,7 @@
 :root {
+background-color: #2e303a;
+color: #fff;
+  /*
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -27,9 +30,9 @@
 
   @media (max-width: 1024px) {
     font-size: 16px;
-  }
+  }*/
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
