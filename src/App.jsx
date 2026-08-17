@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import Button from "../src/components/Button/Button";
 import CardButton from "./components/CardButton/CardButton";
 import JournalItem from "./components/JournalItem/JournalItem";
@@ -21,6 +22,15 @@ function App() {
       date: new Date(),
     },
   ];
+
+  const [inputData, setInputData] = useState("");
+
+  const inputChange = (event) => {
+    console.log(event.target.value);
+    setInputData(event.target.value);
+    console.log(inputData); // Отображается предыдущий инпут
+  };
+
   return (
     <>
       <div className="app">
@@ -44,7 +54,11 @@ function App() {
             </CardButton>
           </JournalList>
         </LeftPanel>
-        <Body></Body>
+        <Body>
+          {/*Контролируемый компонент*/}
+          <input type="text" value={inputData} onChange={inputChange} />{" "}
+          <Button />
+        </Body>
       </div>
     </>
   );

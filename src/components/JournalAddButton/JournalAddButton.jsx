@@ -14,16 +14,16 @@ const JournalAddButton = () => {
         <path
           d="M3.3335 8H12.6668"
           stroke="white"
-          stroke-width="1.33333"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.33333"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M8 3.33331V12.6666"
           stroke="white"
-          stroke-width="1.33333"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.33333"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
       Новое воспоминание

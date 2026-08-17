@@ -1,5 +1,4 @@
 import "./Header.css";
-import Image from "../../assets/Image.svg";
 
 const Header = ({ children }) => {
   return (
