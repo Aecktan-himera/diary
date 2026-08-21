@@ -8,6 +8,7 @@ import LeftPanel from "./layouts/LeftPanel/LeftPanel";
 import Header from "./components/Header/Header";
 import Body from "./layouts/Body/Body";
 import JournalAddButton from "./components/JournalAddButton/JournalAddButton";
+import JournalForm from "./components/JournalForm/JournalForm";
 
 function App() {
   const data = [
@@ -22,14 +23,6 @@ function App() {
       date: new Date(),
     },
   ];
-
-  const [inputData, setInputData] = useState("");
-
-  const inputChange = (event) => {
-    console.log(event.target.value);
-    setInputData(event.target.value);
-    console.log(inputData); // Отображается предыдущий инпут
-  };
 
   return (
     <>
@@ -55,9 +48,7 @@ function App() {
           </JournalList>
         </LeftPanel>
         <Body>
-          {/*Контролируемый компонент*/}
-          <input type="text" value={inputData} onChange={inputChange} />{" "}
-          <Button />
+          <JournalForm />
         </Body>
       </div>
     </>
