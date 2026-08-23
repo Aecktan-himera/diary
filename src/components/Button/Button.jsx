@@ -1,8 +1,12 @@
+// Stateless компонент
 import "./Button.css";
-import { useState } from "react";
 
-const Button = ({ text }) => {
-  return <button className="button accent">{text}</button>;
+const Button = ({ text, onClick }) => {
+  return (
+    <button className="button accent" onClick={onClick}>
+      {text}
+    </button>
+  );
 };
 
 export default Button;
